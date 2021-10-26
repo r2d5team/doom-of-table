@@ -1,11 +1,11 @@
 form {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: orange;
+  margin-top: 9%;
   border-radius: 10px;
-  padding: 10px;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 80%;
 }
 
 form input[type="text"] {
@@ -17,5 +17,5 @@ form button {
   border: none;
 }
 form img {
-  width: 20px;
+  width: 10%;
 }
