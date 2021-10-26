@@ -1,0 +1,20 @@
+.header {
+    font-family: impact;
+    font-size: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playAgainButton {
+    width: 5vw;
+
+}
+
+.playAgainButton:hover {
+    color: red;
+    width: 7vw;
+  
+}
+
