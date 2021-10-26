@@ -1,3 +1,16 @@
 .header {
     font-family: impact;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.playAgainButton {
+    width: 16px;
+    height: 16px;
+    align-items: center;
+}
+
+.playAgainButton:hover {
+    background-color: orange;
+}
+
