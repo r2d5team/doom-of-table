@@ -6,27 +6,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 30%;
+  border-radius: var(--button1-border-radius);
   box-shadow: var(--button1-box-shadow);
   backdrop-filter: var(--button1-backdrop-filter);
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-top: 10px;
 }
 
 .iconsButton {
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 13%;
+  width: 14%;
 }
 
 .memberTitle {
   font-size: var(--memberTitle-fontsize);
   font-family: var(--memberTitle-font-family);
-}
-
-.button {
-  width: var(--button1-width);
-  height: var(--button1-heigth);
-  background: var(--button1-background);
-  box-shadow: var(--button1-boxshadow);
-  backdrop-filter: var(--button1-backdrop-filter);
-  border-radius: var(--button1-border-radius);
 }
