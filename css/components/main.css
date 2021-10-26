@@ -1,3 +1,12 @@
+.button1 {
+  width: 15%;
+  height: 5vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .iconsButton {
-  width: 10px;
+  width: 10%;
 }
