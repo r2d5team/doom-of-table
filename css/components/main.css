@@ -1,3 +1,24 @@
 .button1 {
-  width: 20%;
+  background: var(--button1-background);
+  width: var(--button1-width);
+  height: var(--button1-heigth);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--button1-border-radius);
+  box-shadow: var(--button1-box-shadow);
+  backdrop-filter: var(--button1-backdrop-filter);
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-top: 10px;
+}
+
+.iconsButton {
+  width: 14%;
+}
+
+.memberTitle {
+  font-size: var(--memberTitle-fontsize);
+  font-family: var(--memberTitle-font-family);
 }
