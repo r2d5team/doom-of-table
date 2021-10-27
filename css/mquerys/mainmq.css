@@ -1,0 +1,22 @@
+@media (max-width: 500px) {
+  /*MAIN*/
+
+  main {
+    margin-top: 10%;
+  }
+
+  /*BOTONES MEMBER*/
+  .button1 {
+    width: 80%;
+    padding: 3%;
+  }
+
+  .iconsButton {
+    width: 14%;
+  }
+
+  .memberTitle {
+    font-size: 6vw;
+    font-family: var(--memberTitle-font-family);
+  }
+}

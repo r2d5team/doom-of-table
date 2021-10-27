@@ -9,83 +9,87 @@
   margin-bottom: 3%;
 }
 
-.headerButton{
-    display:contents;
+.headerButton {
+  display: contents;
 }
 
 .playAgainIcon {
-    width: 5vw;
-
+  width: 5vw;
+  position: absolute;
+  margin-top: 7%;
 }
 
 .playAgainIcon:hover {
-    filter: invert(20%) sepia(100%) saturate(4000%);
-    width: 7vw;
-    cursor: pointer;
+  filter: invert(20%) sepia(100%) saturate(4000%);
+  width: 7vw;
+  cursor: pointer;
 }
 
-@keyframes bloodDrop{
-    from { top: 2%;
-      }
-      to {
-        top: 12%;
-      }
-    }
-@keyframes bloodDrop1{
-    from {top: 3%;
-          left: 48%;
-          
-    }
-    to {top: 15%;
-        left:48%;
-    }
+@keyframes bloodDrop {
+  from {
+    top: 2%;
+  }
+  to {
+    top: 12%;
+  }
+}
+@keyframes bloodDrop1 {
+  from {
+    top: 3%;
+    left: 48%;
+  }
+  to {
+    top: 15%;
+    left: 48%;
+  }
 }
 
-@keyframes bloodDrop2{
-    from { top: 4%;
-           left: 51%;
-    }
-    to {top: 16%;
-        left:51%;
-    }
+@keyframes bloodDrop2 {
+  from {
+    top: 4%;
+    left: 51%;
+  }
+  to {
+    top: 16%;
+    left: 51%;
+  }
 }
-
 
 .bloodDropIcon {
-    width: 3.5vh;
-    position: absolute;
-    animation: bloodDrop; 
-    animation-duration: 3s;
-    animation-timing-function: ease-in;
-    animation-delay: -1s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: normal;
-    animation-play-state: running;
+  width: 3.5vh;
+  position: absolute;
+  animation: bloodDrop;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: -1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: normal;
+  animation-play-state: running;
 }
 
 .bloodDropIcon1 {
-    width: 2vh;
-    position: absolute;
-    animation: bloodDrop1; 
-    animation-duration: 3.5s;
-    animation-timing-function: ease-in;
-    animation-delay: -1s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: normal;
-    animation-play-state: running;
+  width: 2vh;
+  position: absolute;
+  animation: bloodDrop1;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in;
+  animation-delay: -1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: normal;
+  animation-play-state: running;
 }
 
 .bloodDropIcon2 {
-    width: 2vh;
-    position: absolute;
-    animation: bloodDrop2; 
-    animation-duration: 3.5s;
-    animation-timing-function: ease-in;
-    animation-delay: -1s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: normal;
-    animation-play-state: running;
+  width: 2vh;
+  position: absolute;
+  animation: bloodDrop2;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in;
+  animation-delay: -1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: normal;
+  animation-play-state: running;
 }
