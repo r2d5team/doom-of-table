@@ -2,7 +2,7 @@
   /*FOOTER*/
 
   .footer {
-    margin-top: 25%;
+    margin-bottom: 10%;
     font-family: impact;
     font-size: 7vw;
     display: flex;
@@ -17,8 +17,8 @@
 
   .playButtonIcon {
     width: 10vw;
-    
     position: absolute;
+    top: 80%;
   }
 
   .playButtonIcon:hover {

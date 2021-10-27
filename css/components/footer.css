@@ -1,6 +1,6 @@
 .footer {
     font-family: impact;
-    font-size: 2vw;
+    font-size: 6vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,10 +9,11 @@
 
 .footerButton{
     display:contents;
+    position: absolute;
 }
 
 .playButtonIcon {
-    width: 3vw;
+    width: 5vw;
     position: absolute;
 }
 
