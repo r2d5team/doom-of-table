@@ -9,7 +9,6 @@
   margin-bottom: 3%;
 }
 
-<<<<<<< HEAD
 .headerButton{
     display:contents;
 }
@@ -89,19 +88,4 @@
     animation-direction: normal;
     animation-fill-mode: normal;
     animation-play-state: running;
-=======
-.playAgainButton {
-  position: absolute;
-  margin-top: 7%;
-  width: 5vw;
-}
-
-.playAgainButton:hover {
-  color: red;
-  width: 7vw;
-}
-
-h1 {
-  margin-bottom: 8%;
->>>>>>> develop
 }

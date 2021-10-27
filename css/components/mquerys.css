@@ -13,13 +13,13 @@
     font-size: 10vw;
   }
 
-  .playAgainButton {
+  .playAgainIcon {
     position: absolute;
     margin-top: 15%;
     width: 11vw;
   }
 
-  .playAgainButton:hover {
+  .playAgainIcon:hover {
     color: red;
     width: 15vw;
   }
