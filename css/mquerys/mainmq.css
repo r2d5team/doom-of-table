@@ -1,9 +1,4 @@
 @media (max-width: 500px) {
-  /*MAIN*/
-
-  main {
-    margin-top: 10%;
-  }
 
   /*BOTONES MEMBER*/
   .button1 {
@@ -12,11 +7,11 @@
   }
 
   .iconsButton {
-    width: 14%;
+    width: 10%;
   }
 
   .memberTitle {
-    font-size: 6vw;
+    font-size: 5vw;
     font-family: var(--memberTitle-font-family);
   }
 }
