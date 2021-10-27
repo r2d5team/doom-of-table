@@ -1,0 +1,41 @@
+@media (max-width: 500px) {
+  /*HEADER*/
+  .header {
+    font-size: 10vw;
+  }
+
+  .playAgainButton {
+    position: absolute;
+    margin-top: 18%;
+    width: 11vw;
+  }
+
+  .playAgainButton:hover {
+    color: red;
+    width: 15vw;
+  }
+
+  h1 {
+    margin-top: 5%;
+  }
+
+  /*MAIN*/
+
+  main {
+    margin-top: 20%;
+  }
+
+  /*BOTONES MEMBER*/
+  .button1 {
+    width: 60%;
+  }
+
+  .iconsButton {
+    width: 14%;
+  }
+
+  .memberTitle {
+    font-size: var(--memberTitle-fontsize);
+    font-family: var(--memberTitle-font-family);
+  }
+}
