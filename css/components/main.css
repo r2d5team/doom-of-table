@@ -20,7 +20,7 @@ main {
   box-shadow: var(--button1-box-shadow);
   backdrop-filter: var(--button1-backdrop-filter);
   padding: 2%;
-  margin-top: 8%;
+  margin-top: 2%;
 }
 
 .iconsButton {
