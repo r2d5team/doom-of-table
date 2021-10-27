@@ -1,4 +1,13 @@
 @media (max-width: 500px) {
+  /*BODY*/
+  body {
+    background-image: url("/css/img/bodybackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+  }
+
   /*HEADER*/
   .header {
     font-size: 10vw;
@@ -6,7 +15,7 @@
 
   .playAgainButton {
     position: absolute;
-    margin-top: 18%;
+    margin-top: 15%;
     width: 11vw;
   }
 
@@ -22,12 +31,36 @@
   /*MAIN*/
 
   main {
-    margin-top: 20%;
+    margin-top: 10%;
+  }
+
+  /*FORM*/
+  form {
+    display: flex;
+    background-color: orange;
+    margin-top: 9%;
+    padding: 3%;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+  form input[type="text"] {
+    font-size: 120%;
+    border-radius: 10px;
+  }
+  form button {
+    background-color: Transparent;
+    border: none;
+    width: 50px;
+  }
+  form img {
+    width: 130%;
   }
 
   /*BOTONES MEMBER*/
   .button1 {
-    width: 60%;
+    width: 80%;
+    padding: 3%;
   }
 
   .iconsButton {
@@ -35,7 +68,14 @@
   }
 
   .memberTitle {
-    font-size: var(--memberTitle-fontsize);
+    font-size: 6vw;
     font-family: var(--memberTitle-font-family);
+  }
+}
+
+@media (max-width: 280px) {
+  form input[type="text"] {
+    font-size: 100%;
+    border-radius: 10px;
   }
 }
