@@ -20,7 +20,6 @@
     filter: invert(20%) sepia(100%) saturate(4000%);
     width: 7vw;
     cursor: pointer;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 @keyframes bloodDrop{
