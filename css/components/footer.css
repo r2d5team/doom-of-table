@@ -13,7 +13,7 @@
 
 .playButtonIcon {
     width: 3vw;
-    position: relative;
+    position: absolute;
 }
 
 .playButtonIcon:hover {
