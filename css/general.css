@@ -1,4 +1,14 @@
 @import "reset.css";
 @import "variables.css";
-@import "./components/styles-components.css"
+@import "./components/styles-components.css";
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/css/img/bodybackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
