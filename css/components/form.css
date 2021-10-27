@@ -1,0 +1,21 @@
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: orange;
+  margin-top: 9%;
+  border-radius: 10px;
+  width: 80%;
+}
+
+form input[type="text"] {
+  flex-grow: 1;
+  border-radius: 10px;
+}
+form button {
+  background-color: Transparent;
+  border: none;
+}
+form img {
+  width: 10%;
+}
