@@ -23,9 +23,9 @@
   }
 
   /*Dispositvo 280*/
-  @media (max-width: 280px) {
+  @media (max-width: 390px) {
     form input[type="text"] {
-      font-size: 100%;
+      font-size: 50%;
       border-radius: 10px;
     }
   }
