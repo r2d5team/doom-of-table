@@ -5,6 +5,29 @@ const members = ["Lucas", "Biplop", "Sergio", "Ariann"];
 }*/
 
 /*IMPRIMIR EN HTML LOS MEMBERS */
+function print() {
+  for (const object of members) {
+    let localizacion = document.getElementById("members");
+    localizacion.innerHTML += `
+    <section class="button1">
+    <img
+    class="iconsButtonKill"
+    src="/css/img/icons/kill.png"
+    ;
+    alt="Hand with  knife image"
+  />
+  <p class="memberTitle">${object}</p>
+  <img
+    class="iconsButtonTrash"
+    src="/css/img/icons/trash.svg"
+    ;
+    alt="Trash can image"
+  />
+</section>`;
+  }
+}
+
+print();
 
 /*Q SELECCIONE ALEATORIAMENTE*/
 
@@ -17,17 +40,17 @@ function randomMembers() {
 randomMembers();
 
 /*<section class="button1">
-          <img
-            class="iconsButton"
-            src="/css/img/icons/kill.png"
-            ;
-            alt="Hand with  knife image"
-          />
-          <p class="memberTitle">Member 1</p>
-          <img
-            class="iconsButton"
-            src="/css/img/icons/trash.svg"
-            ;
-            alt="Trash can image"
-          />
-        </section>*/
+  <img
+    class="iconsButton"
+    src="/css/img/icons/kill.png"
+    ;
+    alt="Hand with  knife image"
+  />
+  <p class="memberTitle">${object}</p>
+  <img
+    class="iconsButton"
+    src="/css/img/icons/trash.svg"
+    ;
+    alt="Trash can image"
+  />
+</section>*/

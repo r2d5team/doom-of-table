@@ -1,12 +1,15 @@
 @media (max-width: 500px) {
-
   /*BOTONES MEMBER*/
   .button1 {
     width: 80%;
     padding: 3%;
   }
 
-  .iconsButton {
+  .iconsButtonKill {
+    width: 10%;
+    opacity: 0;
+  }
+  .iconsButtonTrash {
     width: 10%;
   }
 
