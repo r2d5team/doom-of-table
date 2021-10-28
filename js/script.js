@@ -36,12 +36,17 @@ print();
 
 /*SELECCIONE MEMBERS ALEATORIAMENTE*/
 function randomMembers() {
+    
     const index = Math.floor(Math.random() * members.length);
     const knifeImage = document.getElementById(index);
     knifeImage.style.opacity = "1";
 }
 
-randomMembers();
+/*FUNCIÓN RECARGAR*/
+
+function reloadPage() {
+    location.reload();
+}
 
 /*<section class="button1">
   <img
