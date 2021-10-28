@@ -32,7 +32,13 @@ print();
 /*SELECCIONE MEMBERS ALEATORIAMENTE*/
 function randomMembers() {
   const index = Math.floor(Math.random() * members.length);
-  console.log(members[index]);
+    console.log(members[index]);
+    alterStyle() {
+        let knife = document.getElementByClass("iconsButtonKill");
+    }
+        iconsButtonKill.style.opacity = 1;
+    
+
 }
 randomMembers();
 
