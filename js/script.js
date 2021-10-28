@@ -8,7 +8,7 @@ const members = ["Lucas", "Biplop", "Sergio", "Ariann"];
 
 /*Q SELECCIONE ALEATORIAMENTE*/
 
-/*RECORRER FUNCIÓN ALEATORIAMENTE*/
+/*RECORRER ARRAY ALEATORIAMENTE*/
 function randomMembers() {
   const index = Math.floor(Math.random() * members.length);
   console.log(members[index]);
