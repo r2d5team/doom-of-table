@@ -25,10 +25,13 @@ main {
   margin-top: 5%;
 }
 
-.iconsButton {
+.iconsButtonKill {
+  width: 10%;
+  opacity: 0;
+}
+.iconsButtonTrash {
   width: 10%;
 }
-
 .memberTitle {
   font-size: var(--memberTitle-fontsize);
   font-family: var(--memberTitle-font-family);

@@ -10,7 +10,7 @@ function print() {
     let localizacion = document.getElementById("members");
     localizacion.innerHTML += `
     <section id="${object}" class="button1">
-    <img
+    <img id="knife${object}"
     class="iconsButtonKill"
     src="/css/img/icons/kill.png"
     ;
@@ -29,15 +29,12 @@ function print() {
 
 print();
 
-/*RECORRER ARRAY ALEATORIAMENTE*/
+/*SELECCIONE MEMBERS ALEATORIAMENTE*/
 function randomMembers() {
   const index = Math.floor(Math.random() * members.length);
   console.log(members[index]);
 }
-
 randomMembers();
-
-/*Q SELECCIONE ALEATORIAMENTE*/
 
 /*<section class="button1">
   <img
