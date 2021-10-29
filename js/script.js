@@ -1,5 +1,7 @@
+/*ARRAY VACIO*/
 const members = [];
 
+/*AÑADIR MEMBERS A TRAVÉS DEL INPUT*/
 function add() {
   let input = document.getElementById("text");
   members.push(input.value);
