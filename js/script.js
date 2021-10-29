@@ -13,7 +13,7 @@ function print() {
   members.forEach((object) => {
     empty += `
     <section class="button1">
-    <img id="bleeh"
+    <img id="${object}"
     class="iconsButtonKill"
     src="/css/img/icons/kill.png"
     ;
@@ -39,7 +39,9 @@ function cleanInput() {
 /*SELECCIONE MEMBERS ALEATORIAMENTE*/
 function randomMembers() {
   const index = Math.floor(Math.random() * members.length);
-  const knifeImage = document.getElementById(index);
+  const coder1 = members[index];
+  const knifeImage = document.getElementById(coder1);
+  console.log(index);
   knifeImage.style.opacity = "1";
 }
 
