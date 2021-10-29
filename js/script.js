@@ -1,27 +1,25 @@
-const members = [
-  { name: "Lucas", id: 0 },
-  { name: "Biblop", id: 1 },
-  { name: "Sergi", id: 2 },
-  { name: "Ariann", id: 3 },
-];
+const members = [];
 
-/*for (const object of members) {
-  console.log(object);
-}*/
+function add() {
+  let input = document.getElementById("text");
+  members.push(input.value);
+  console.log(input.value);
+}
 
 /*IMPRIMIR EN HTML LOS MEMBERS */
 function print() {
-  for (const object of members) {
-    let localizacion = document.getElementById("members");
-    localizacion.innerHTML += `
+  let localizacion = document.getElementById("members");
+  let empty = "";
+  members.forEach((object) => {
+    empty += `
     <section class="button1">
-    <img id="${object.id}"
+    <img id="bleeh"
     class="iconsButtonKill"
     src="/css/img/icons/kill.png"
     ;
     alt="Hand with  knife image"
   />
-  <p class="memberTitle">${object.name}</p>
+  <p class="memberTitle">${object}</p>
   <img
     class="iconsButtonTrash"
     src="/css/img/icons/trash.svg"
@@ -29,23 +27,23 @@ function print() {
     alt="Trash can image"
   />
 </section>`;
-  }
+  });
+  localizacion.innerHTML += empty;
 }
 
 print();
 
 /*SELECCIONE MEMBERS ALEATORIAMENTE*/
 function randomMembers() {
-    
-    const index = Math.floor(Math.random() * members.length);
-    const knifeImage = document.getElementById(index);
-    knifeImage.style.opacity = "1";
+  const index = Math.floor(Math.random() * members.length);
+  const knifeImage = document.getElementById(index);
+  knifeImage.style.opacity = "1";
 }
 
 /*FUNCIÓN RECARGAR*/
 
 function reloadPage() {
-    location.reload();
+  location.reload();
 }
 
 /*<section class="button1">
