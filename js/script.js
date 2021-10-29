@@ -28,10 +28,13 @@ function print() {
   />
 </section>`;
   });
-  localizacion.innerHTML += empty;
+  localizacion.innerHTML = empty;
 }
 
-print();
+function cleanInput() {
+  let input = document.getElementById("text");
+  input.value = "";
+}
 
 /*SELECCIONE MEMBERS ALEATORIAMENTE*/
 function randomMembers() {

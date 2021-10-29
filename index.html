@@ -34,9 +34,9 @@
       />
     </header>
     <main>
-      <form>
+      <form onsubmit="event.preventDefault()">
         <input type="text" id="text" placeholder="add member" />
-        <button class="add-friend" onclick="add(), print()">
+        <button class="add-friend" onclick="add(), print(), cleanInput()">
           <img src="/css/img/icons/add-user.svg" alt="add-friend" />
         </button>
       </form>
