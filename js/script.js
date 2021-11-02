@@ -31,6 +31,15 @@ function print() {
 </section>`;
   });
   localizacion.innerHTML = empty;
+  killMember();
+}
+function killMember() {
+  members.forEach((coder) => {
+    const knifeImage = document.getElementById(coder.name);
+    if (!coder.itsAlive) {
+      knifeImage.style.opacity = "1";
+    }
+  });
 }
 
 function cleanInput() {
@@ -54,8 +63,9 @@ function randomMembers() {
   const index = Math.floor(Math.random() * aliveList.length);
   const coder1 = aliveList[index];
   coder1.itsAlive = false;
-  const knifeImage = document.getElementById(coder1.name);
-  knifeImage.style.opacity = "1";
+  /*const knifeImage = document.getElementById(coder1.index);
+  knifeImage.style.opacity = "1";*/
+  print();
 }
 function checkingWinner() {
   let aliveList = filtersAlive();
