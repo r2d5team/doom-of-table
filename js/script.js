@@ -34,7 +34,6 @@ function print() {
   localizacion.innerHTML = empty;
   killMember();
 }
-
 function killMember() {
   members.forEach((coder) => {
     const knifeImage = document.getElementById(coder.name);
