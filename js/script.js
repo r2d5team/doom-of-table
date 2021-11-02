@@ -21,12 +21,13 @@ function print() {
     alt="Hand with  knife image"
   />
   <p class="memberTitle">${object}</p>
-  <img
+  <img id="${members.indexOf(object)}"
+  onclick="deleteMember(this)"
     class="iconsButtonTrash"
     src="/css/img/icons/trash.svg"
     ;
     alt="Trash can image"
-  />
+  /> 
 </section>`;
   });
   localizacion.innerHTML = empty;
@@ -51,6 +52,12 @@ function randomMembers() {
 function reloadPage() {
   location.reload();
 }
+
+function deleteMember(memberDelete) {
+  members.splice(memberDelete.id, 1);
+  print();
+}
+
 
 /*<section class="button1">
   <img
