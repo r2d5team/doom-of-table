@@ -5,7 +5,6 @@ const members = [];
 function add() {
   let input = document.getElementById("text");
   members.push(input.value);
-  console.log(input.value);
 }
 
 /*IMPRIMIR EN HTML LOS MEMBERS */
