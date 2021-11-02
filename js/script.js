@@ -30,7 +30,18 @@ function print() {
   /> 
 </section>`;
   });
+
   localizacion.innerHTML = empty;
+  killMember();
+}
+
+function killMember() {
+  members.forEach((coder) => {
+    const knifeImage = document.getElementById(coder.name);
+    if (!coder.itsAlive) {
+      knifeImage.style.opacity = "1";
+    }
+  });
 }
 
 function cleanInput() {
@@ -40,12 +51,6 @@ function cleanInput() {
 
 /*SELECCIONE MEMBERS ALEATORIAMENTE*/
 function filtersAlive() {
-  let aliveList = [];
-  for (const object of members) {
-    if (object.itsAlive === true) {
-      aliveList.push(object);
-    }
-  }
   return members.filter((object) => object.itsAlive);
 }
 
@@ -54,15 +59,14 @@ function randomMembers() {
   const index = Math.floor(Math.random() * aliveList.length);
   const coder1 = aliveList[index];
   coder1.itsAlive = false;
-  const knifeImage = document.getElementById(coder1.name);
-  knifeImage.style.opacity = "1";
+  print();
+  checkingWinner();
 }
+
 function checkingWinner() {
   let aliveList = filtersAlive();
-  if (aliveList.length == 2) {
-    if (aliveList[0].itsAlive == true) {
-      alert(`the winner is ${aliveList[0].name}`);
-    } else alert(`the winner is ${aliveList[1].name}`);
+  if (aliveList.length === 1) {
+    alert(`the winner is ${aliveList[0].name}`);
   }
 }
 /*FUNCIÓN RECARGAR*/
