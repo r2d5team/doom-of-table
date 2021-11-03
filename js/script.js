@@ -40,7 +40,8 @@ function killMember() {
   members.forEach((coder) => {
     const knifeImage = document.getElementById(coder.name);
     if (!coder.itsAlive) {
-      knifeImage.style.opacity = "1";
+      knifeImage.parentElement.className = "dead";
+      console.log(knifeImage.parentElement);
     }
   });
 }
@@ -61,7 +62,7 @@ function randomMembers() {
 
 function checkingWinner() {
   let aliveList = filtersAlive();
-  if (aliveList.length == 1) {
+  if (aliveList.length === 1) {
     alert(`the winner is ${aliveList[0].name}`);
   }
 }
@@ -92,3 +93,4 @@ function deleteMember(memberDelete) {
     alt="Trash can image"
   />
 </section>*/
+//style.opacity = "1";
