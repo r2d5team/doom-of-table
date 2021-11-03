@@ -72,7 +72,7 @@ function checkingWinner() {
 function reloadPage() {
   location.reload();
 }
-
+/*FUNCION DELETE MEMBER KILLED IN TRASH ICON*/
 function deleteMember(memberDelete) {
   members.splice(memberDelete.id, 1);
   print();
