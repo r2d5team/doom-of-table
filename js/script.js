@@ -5,6 +5,7 @@ const members = [];
 function add() {
   let input = document.getElementById("text");
   members.push({ name: input.value, itsAlive: true });
+  input.value = "";
 }
 
 /*IMPRIMIR EN HTML LOS MEMBERS */
@@ -34,6 +35,7 @@ function print() {
   localizacion.innerHTML = empty;
   killMember();
 }
+
 function killMember() {
   members.forEach((coder) => {
     const knifeImage = document.getElementById(coder.name);
@@ -41,11 +43,6 @@ function killMember() {
       knifeImage.style.opacity = "1";
     }
   });
-}
-
-function cleanInput() {
-  let input = document.getElementById("text");
-  input.value = "";
 }
 
 /*SELECCIONE MEMBERS ALEATORIAMENTE*/
@@ -64,10 +61,11 @@ function randomMembers() {
 
 function checkingWinner() {
   let aliveList = filtersAlive();
-  if (aliveList.length === 1) {
+  if (aliveList.length == 1) {
     alert(`the winner is ${aliveList[0].name}`);
   }
 }
+
 /*FUNCIÓN RECARGAR*/
 
 function reloadPage() {
