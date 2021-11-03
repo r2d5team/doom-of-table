@@ -41,7 +41,6 @@ function killMember() {
     const knifeImage = document.getElementById(coder.name);
     if (!coder.itsAlive) {
       knifeImage.parentElement.className = "dead";
-      console.log(knifeImage.parentElement);
     }
   });
 }
@@ -51,7 +50,7 @@ function filtersAlive() {
   return members.filter((object) => object.itsAlive);
 }
 function lastKilled(coder) {
-  let coderDead = document.getElementsByClassName("killedMembers");
+  const coderDead = document.getElementById("killedMembers");
   coderDead.innerHTML = "";
   coderDead.innerHTML = `<section class="dead">
   <img id="${coder.name}"
