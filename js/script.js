@@ -5,6 +5,7 @@ const members = [];
 function add() {
   let input = document.getElementById("text");
   members.push({ name: input.value, itsAlive: true });
+  input.value = "";
 }
 
 /*IMPRIMIR EN HTML LOS MEMBERS */
@@ -30,22 +31,23 @@ function print() {
   /> 
 </section>`;
   });
+
   localizacion.innerHTML = empty;
+  killMember();
 }
 
-function cleanInput() {
-  let input = document.getElementById("text");
-  input.value = "";
+function killMember() {
+  members.forEach((coder) => {
+    const knifeImage = document.getElementById(coder.name);
+    if (!coder.itsAlive) {
+      knifeImage.parentElement.className = "dead";
+      console.log(knifeImage.parentElement);
+    }
+  });
 }
 
 /*SELECCIONE MEMBERS ALEATORIAMENTE*/
 function filtersAlive() {
-  let aliveList = [];
-  for (const object of members) {
-    if (object.itsAlive === true) {
-      aliveList.push(object);
-    }
-  }
   return members.filter((object) => object.itsAlive);
 }
 
@@ -54,23 +56,23 @@ function randomMembers() {
   const index = Math.floor(Math.random() * aliveList.length);
   const coder1 = aliveList[index];
   coder1.itsAlive = false;
-  const knifeImage = document.getElementById(coder1.name);
-  knifeImage.style.opacity = "1";
+  print();
+  checkingWinner();
 }
+
 function checkingWinner() {
   let aliveList = filtersAlive();
-  if (aliveList.length == 2) {
-    if (aliveList[0].itsAlive == true) {
-      alert(`the winner is ${aliveList[0].name}`);
-    } else alert(`the winner is ${aliveList[1].name}`);
+  if (aliveList.length === 1) {
+    alert(`the winner is ${aliveList[0].name}`);
   }
 }
+
 /*FUNCIÓN RECARGAR*/
 
 function reloadPage() {
   location.reload();
 }
-
+/*FUNCION DELETE MEMBER KILLED IN TRASH ICON*/
 function deleteMember(memberDelete) {
   members.splice(memberDelete.id, 1);
   print();
@@ -91,3 +93,4 @@ function deleteMember(memberDelete) {
     alt="Trash can image"
   />
 </section>*/
+//style.opacity = "1";
