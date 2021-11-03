@@ -23,7 +23,7 @@
 
   .playButtonIcon:hover {
     filter: invert(20%) sepia(100%) saturate(4000%);
-    width: 4vw;
+    width: 12vw;
     cursor: pointer;
   }
 
