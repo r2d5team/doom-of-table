@@ -2,7 +2,6 @@
   /*FOOTER*/
 
   .footer {
-    margin-bottom: 10%;
     font-family: impact;
     font-size: 7vw;
     display: flex;
@@ -16,18 +15,14 @@
   }
 
   .playButtonIcon {
-    width: 10vw;
+    width: 12vw;
     position: absolute;
-    top: 80%;
+    top: 81%;
   }
 
   .playButtonIcon:hover {
     filter: invert(20%) sepia(100%) saturate(4000%);
-    width: 12vw;
+    width: 14vw;
     cursor: pointer;
-  }
-
-  .footerTitle {
-    margin-top: 10%;
   }
 }

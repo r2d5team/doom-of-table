@@ -50,12 +50,33 @@ function killMember() {
 function filtersAlive() {
   return members.filter((object) => object.itsAlive);
 }
+function lastKilled(coder) {
+  let coderDead = document.getElementsByClassName("killedMembers");
+  coderDead.innerHTML = "";
+  coderDead.innerHTML = `<section class="dead">
+  <img id="${coder.name}"
+  class="iconsButtonKill"
+  src="/css/img/icons/kill.png"
+  ;
+  alt="Hand with  knife image"
+/>
+<p class="memberTitle">${coder.name}</p>
+<img id="${members.indexOf(coder)}"
+onclick="deleteMember(this)"
+  class="iconsButtonTrash"
+  src="/css/img/icons/trash.svg"
+  ;
+  alt="Trash can image"
+/> 
+</section>`;
+}
 
 function randomMembers() {
   let aliveList = filtersAlive();
   const index = Math.floor(Math.random() * aliveList.length);
   const coder1 = aliveList[index];
   coder1.itsAlive = false;
+  lastKilled(coder1);
   print();
   checkingWinner();
 }
