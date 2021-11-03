@@ -16,13 +16,22 @@
 
   .playButtonIcon {
     width: 12vw;
-    position: absolute;
-    top: 81%;
+    position: relative;
   }
 
   .playButtonIcon:hover {
     filter: invert(20%) sepia(100%) saturate(4000%);
     width: 14vw;
     cursor: pointer;
+  }
+
+  .killedMembers .dead {
+    background-color: rgba(240, 16, 16, 0.865);
+  }
+
+  .killedMembers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
