@@ -1,7 +1,7 @@
 @import "reset.css";
 @import "variables.css";
 @import "components/styles-components.css";
-
+@import "mquerys/importsmquerys.css";
 * {
   box-sizing: border-box;
 }
