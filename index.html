@@ -1,18 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <title>Doom of Table</title>
   </head>
   <body>
-    <header>
-      <h1>Play again</h1>
+    <header class="header">
+      <h1>Doom of Table</h1>
+      <button class="headerButton" onclick="reloadPage()">
+        <img
+          src="/css/img/icons/replay.svg"
+          class="playAgainIcon"
+          alt="Play again button"
+        />
+      </button>
+      <img
+        src="./css/img/icons/icons8-gota-de-sangre-96.png"
+        class="bloodDropIcon"
+        alt="Blood drop"
+      />
+      <img
+        src="./css/img/icons/icons8-gota-de-sangre-96.png"
+        class="bloodDropIcon1"
+        alt="Blood drop"
+      />
+      <img
+        src="./css/img/icons/icons8-gota-de-sangre-96.png"
+        class="bloodDropIcon2"
+        alt="Blood drop"
+      />
     </header>
     <main>
-      <button>Member 1</button>
+      <form onsubmit="event.preventDefault()">
+        <input type="text" id="text" placeholder="add member" />
+        <button class="add-friend" onclick="add(), print()">
+          <img src="/css/img/icons/add-user.svg" alt="add-friend" />
+        </button>
+      </form>
+      <article id="members" class="container"></article>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <button class="footerButton" onclick="randomMembers()">
+        <img
+          src="./css/img/icons/play.svg"
+          class="playButtonIcon"
+          alt="Play button"
+        />
+      </button>
+      <div id="killedMembers" class="killedMembers"></div>
+      <h2 class="footerTitle">Sure wanna play???</h2>
+    </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>

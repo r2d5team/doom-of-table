@@ -1,0 +1,37 @@
+@media (max-width: 500px) {
+  /*FOOTER*/
+
+  .footer {
+    font-family: impact;
+    font-size: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerButton {
+    display: contents;
+  }
+
+  .playButtonIcon {
+    width: 12vw;
+    position: relative;
+  }
+
+  .playButtonIcon:hover {
+    filter: invert(20%) sepia(100%) saturate(4000%);
+    width: 14vw;
+    cursor: pointer;
+  }
+
+  .killedMembers .dead {
+    background-color: rgba(240, 16, 16, 0.865);
+  }
+
+  .killedMembers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

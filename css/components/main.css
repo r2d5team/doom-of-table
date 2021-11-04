@@ -1,3 +1,58 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+
 .button1 {
-  width: 20%;
+  background: var(--button1-background);
+  width: var(--button1-width);
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--button1-border-radius);
+  box-shadow: var(--button1-box-shadow);
+  backdrop-filter: var(--button1-backdrop-filter);
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.button1 .iconsButtonKill {
+  width: 10%;
+  opacity: 0;
+}
+
+.dead .iconsButtonKill {
+  opacity: 1;
+  width: 10%;
+}
+
+.iconsButtonTrash {
+  width: 10%;
+}
+.memberTitle {
+  font-size: var(--memberTitle-fontsize);
+  font-family: var(--memberTitle-font-family);
+}
+
+.dead {
+  background: grey;
+  width: var(--button1-width);
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--button1-border-radius);
+  box-shadow: var(--button1-box-shadow);
+  backdrop-filter: var(--button1-backdrop-filter);
+  padding: 2%;
+  margin-top: 5%;
 }

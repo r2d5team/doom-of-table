@@ -1,0 +1,32 @@
+@media (max-width: 500px) {
+  /*FORM*/
+  form {
+    display: flex;
+    background-color: orange;
+    margin-top: 0%;
+    padding: 3%;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+  form input[type="text"] {
+    font-size: 120%;
+    border-radius: 10px;
+  }
+  form button {
+    background-color: Transparent;
+    border: none;
+    width: 50px;
+  }
+  form img {
+    width: 130%;
+  }
+
+  /*Dispositvo 280*/
+  @media (max-width: 390px) {
+    form input[type="text"] {
+      font-size: 100%;
+      border-radius: 10px;
+    }
+  }
+}

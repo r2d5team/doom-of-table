@@ -1,0 +1,18 @@
+@import "reset.css";
+@import "variables.css";
+@import "./components/styles-components.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/css/img/background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

@@ -1,0 +1,17 @@
+@media (max-width: 500px) {
+  /*HEADER*/
+  .header {
+    font-size: 10vw;
+  }
+
+  .playAgainIcon {
+    position: absolute;
+    margin-top: 11.5%;
+    width: 11vw;
+  }
+
+  .playAgainIcon:hover {
+    color: red;
+    width: 15vw;
+  }
+}
