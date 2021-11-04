@@ -17,7 +17,7 @@ function print() {
     <section class="button1">
     <img id="${object.name}"
     class="iconsButtonKill"
-    src="/css/img/icons/kill.png"
+    src="css/img/icons/kill.png"
     ;
     alt="Hand with  knife image"
   />
@@ -25,7 +25,7 @@ function print() {
   <img id="${members.indexOf(object)}"
   onclick="deleteMember(this)"
     class="iconsButtonTrash"
-    src="/css/img/icons/trash.svg"
+    src="css/img/icons/trash.svg"
     ;
     alt="Trash can image"
   /> 
@@ -55,7 +55,7 @@ function lastKilled(coder) {
   coderDead.innerHTML = `<section class="dead">
   <img id="${coder.name}"
   class="iconsButtonKill"
-  src="/css/img/icons/kill.png"
+  src="css/img/icons/kill.png"
   ;
   alt="Hand with  knife image"
 />
@@ -63,7 +63,7 @@ function lastKilled(coder) {
 <img id="${members.indexOf(coder)}"
 onclick="deleteMember(this)"
   class="iconsButtonTrash"
-  src="/css/img/icons/trash.svg"
+  src="css/img/icons/trash.svg"
   ;
   alt="Trash can image"
 /> 
