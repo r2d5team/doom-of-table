@@ -1,13 +1,13 @@
 @import "reset.css";
 @import "variables.css";
-@import "./components/styles-components.css";
+@import "components/styles-components.css";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-image: url("/css/img/background.svg");
+  background-image: url("css/img/background.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
