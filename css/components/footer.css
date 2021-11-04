@@ -9,12 +9,12 @@
 
 .footerButton {
   display: contents;
-  position: absolute;
+  position: relative;
 }
 
 .playButtonIcon {
   width: 5vw;
-  position: absolute;
+  position: relative;
 }
 
 .playButtonIcon:hover {
@@ -25,4 +25,14 @@
 
 .footerTitle {
   margin-top: 5%;
+}
+
+.killedMembers .dead {
+  background-color: rgba(240, 16, 16, 0.865);
+}
+
+.killedMembers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
