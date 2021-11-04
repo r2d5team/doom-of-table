@@ -83,7 +83,9 @@ function randomMembers() {
 function checkingWinner() {
   let aliveList = filtersAlive();
   if (aliveList.length === 1) {
-    alert(`the winner is ${aliveList[0].name}`);
+    setTimeout(() => {
+      alert(`the winner is ${aliveList[0].name}`);
+    }, 500);
   }
 }
 
