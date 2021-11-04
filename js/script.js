@@ -99,20 +99,3 @@ function deleteMember(memberDelete) {
   members.splice(memberDelete.id, 1);
   print();
 }
-
-/*<section class="button1">
-  <img
-    class="iconsButton"
-    src="/css/img/icons/kill.png"
-    ;
-    alt="Hand with  knife image"
-  />
-  <p class="memberTitle">${object}</p>
-  <img
-    class="iconsButton"
-    src="/css/img/icons/trash.svg"
-    ;
-    alt="Trash can image"
-  />
-</section>*/
-//style.opacity = "1";
