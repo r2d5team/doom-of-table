@@ -1,12 +1,12 @@
-@import "./headermq.css";
-@import "./mainmq.css";
-@import "./footermq.css";
-@import "./formmq.css";
+@import "headermq.css";
+@import "mainmq.css";
+@import "footermq.css";
+@import "formmq.css";
 
 @media (max-width: 500px) {
   /*BODY*/
   body {
-    background-image: url("/css/img/bodybackground.jpg");
+    background-image: url("css/img/bodybackground.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
