@@ -47,7 +47,6 @@
 }
 
 .killedMembers .dead .iconsButtonKill {
-  width: 10vh;
   position: relative;
   animation: iconsButtonKill;
   animation-duration: 0.5s;
