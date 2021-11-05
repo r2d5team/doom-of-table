@@ -43,6 +43,7 @@ function killMember() {
       knifeImage.parentElement.className = "dead";
     }
   });
+  audioOnPlay()
 }
 
 /*SELECCIONE MEMBERS ALEATORIAMENTE*/
@@ -98,4 +99,14 @@ function reloadPage() {
 function deleteMember(memberDelete) {
   members.splice(memberDelete.id, 1);
   print();
+}
+
+//AUDIO ON PLAY BUTTON
+function audioOnPlay() {
+let button = document.querySelector(".footerButton")
+button.addEventListener("click", () => {
+      let audioTag = document.createElement("audio")
+      audioTag.setAttribute("src", "audio/psicosis.mp3")
+      audioTag.play(1)
+})
 }

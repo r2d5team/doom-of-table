@@ -27,7 +27,7 @@
 
 @keyframes bloodDrop {
   from {
-    top: 2%;
+    top: -10%;
   }
   to {
     top: 12%;
@@ -35,29 +35,29 @@
 }
 @keyframes bloodDrop1 {
   from {
-    top: 3%;
-    left: 48%;
+    top: -45%;
+    left: 5%;
   }
   to {
     top: 15%;
-    left: 48%;
+    left: 5%;
   }
 }
 
 @keyframes bloodDrop2 {
   from {
-    top: 4%;
-    left: 51%;
+    top: -55%;
+    left: -8%;
   }
   to {
     top: 16%;
-    left: 51%;
+    left: -8%;
   }
 }
 
 .bloodDropIcon {
   width: 3.5vh;
-  position: absolute;
+  position: relative;
   animation: bloodDrop;
   animation-duration: 3s;
   animation-timing-function: ease-in;
@@ -70,7 +70,7 @@
 
 .bloodDropIcon1 {
   width: 2vh;
-  position: absolute;
+  position: relative;
   animation: bloodDrop1;
   animation-duration: 3.5s;
   animation-timing-function: ease-in;
@@ -83,7 +83,7 @@
 
 .bloodDropIcon2 {
   width: 2vh;
-  position: absolute;
+  position: relative;
   animation: bloodDrop2;
   animation-duration: 3.5s;
   animation-timing-function: ease-in;
